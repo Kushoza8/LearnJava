@@ -1,4 +1,4 @@
-to read the whole string us sc.nextLine() instead of sc.next()
+to read the whole string use sc.nextLine() instead of sc.next()
 String str=sc.nextLine();
 System.out.println(str);
 this prints the whole string
