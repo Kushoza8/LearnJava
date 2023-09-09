@@ -1,0 +1,17 @@
+to read the whole string us sc.nextLine() instead of sc.next()
+String str=sc.nextLine();
+System.out.println(str);
+this prints the whole string
+like: input is 
+my name is kush oza
+output with above: my name is kush oza
+
+
+but if i had used sc.next()
+ex: String str1;
+str1=sc.next();
+input: my name is kush oza
+output: my 
+
+
+so with string datatype use sc.nextLine();
