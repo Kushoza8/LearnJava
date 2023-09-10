@@ -12,3 +12,7 @@ Input the first number : 15
 Input the second number: 20                                            
 Input the third number : 25                                            
 false
+3)Write a Java program to compute the sum of the first 100 prime numbers.
+Sample Output:
+
+Sum of the first 100 prime numbers: 24133 
