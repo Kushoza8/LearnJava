@@ -29,3 +29,4 @@ public class TwentyFour {
     }
 }
 With this modification, it should correctly read n and then proceed to read and display the specified number of strings.
+refer: https://www.javatpoint.com/string-array-in-java
