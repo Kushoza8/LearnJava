@@ -1,0 +1,31 @@
+***IMPORTANT ON STRING ARRAY
+
+The problem is with how we are reading the input strings using sc.nextLine() after reading the integer n. When you read the integer n using sc.nextInt(), 
+it consumes only the integer value, leaving the newline character ('\n') in the input buffer. So, when you use sc.nextLine() to read the strings, it immediately consumes the newline character left in the buffer, resulting in skipping the first input.
+
+To fix this issue, you can add an extra sc.nextLine() after reading n to consume the newline character before reading the strings. Here's the modified code:
+java
+
+CODE:
+import java.util.Scanner;
+
+public class TwentyFour {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of string: ");
+        int n = sc.nextInt();
+        sc.nextLine(); // Consume the newline character
+        String[] str = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter string " + (i + 1) + ": ");
+            str[i] = sc.nextLine();
+        }
+
+        System.out.println("Entered strings:");
+        for (int i = 0; i < n; i++) {
+            System.out.println(str[i]);
+        }
+    }
+}
+With this modification, it should correctly read n and then proceed to read and display the specified number of strings.
